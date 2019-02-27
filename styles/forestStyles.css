@@ -1,3 +1,15 @@
-.scaredWrapper {
-    display: 'none'
+#scaredWrapper {
+    display: none;
+}
+
+#helpGirlWrapper {
+    display: none;
+}
+
+#axeWrapper {
+    display: none;
+}
+
+#spoonWrapper {
+    display: none;
 }
