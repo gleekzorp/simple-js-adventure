@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+  <style>
+      #scaredWrapper {
+          display: none;
+      }
+
+      #helpGirlWrapper {
+          display: none;
+      }
+
+      #axeWrapper {
+          display: none;
+      }
+
+      #spoonWrapper {
+          display: none;
+      }
+  </style>
+</head>
+<body>
+    <div class="forestWrapper">
+        <div id="welcomeWrapper">
+            <div class="text-wrapper">
+                <h1>Welcome to the forest</h1>
+                <p>
+                    You come across a girl who is being attacked by a bear.  Will you help her?
+                </p>
+            </div>
+            <div class="buttonWrapper">
+                <button onclick="notScared()">Yes</button>
+                <button onclick="scared()">No</button>
+            </div>
+        </div>
+
+        <div id="scaredWrapper">
+            <h1>THE END... YOU'RE WEAK!!</h1>
+        </div>
+
+        <div id="helpGirlWrapper">
+            <h1>How will you help her?</h1>
+            <div class="buttonWrapper">
+                <button onclick="axe()">AXE</button>
+                <button onclick="spoon()">SPOON</button>
+            </div>
+        </div>
+
+        <div id="axeWrapper">
+            <h1>You picked the correct weapon!  You have saved the girl</h1>
+            <a href="../index.html">
+                <button>Try Another Adventure?</button>
+            </a>
+        </div>
+
+        <div id="spoonWrapper">
+            <h1>You picked the wrong weapon!  The bear kills you and the girl</h1>
+            <a href="../index.html">
+                <button>Try Another Adventure?</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+<script>
+    function notScared() {
+        document.getElementById('welcomeWrapper').style.display='none'
+        document.getElementById('helpGirlWrapper').style.display='block'
+    }
+
+    function scared() {
+        document.getElementById('welcomeWrapper').style.display='none'
+        document.getElementById('scaredWrapper').style.display='block'
+    }
+
+    function axe() {
+        document.getElementById('helpGirlWrapper').style.display='none'
+        document.getElementById('axeWrapper').style.display='block'
+    }
+
+    function spoon() {
+        document.getElementById('helpGirlWrapper').style.display='none'
+        document.getElementById('spoonWrapper').style.display='block'
+    }
+</script>
+</html>
