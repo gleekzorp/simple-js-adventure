@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+<body onload="userName()">
+    <div id="welcomePage">
+        <h1 id="welcomeHeader">Hello</h1>
+        <p>We have two adventures for you today.  Do you want to go on the forest adventure or the scary house adventure?</p>
+        <button>Forest Adventure</button>
+        <button>Scary House Adventure</button>
+    </div>
+</body>
+
+<script>
+    function userName() {
+        name = prompt('Please enter your name')
+        document.getElementById('welcomeHeader').innerHTML = `Hello, ${name}`
+    }
+</script>
+</html>
