@@ -2,9 +2,43 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title></title>
+  <title>House Adventure</title>
+  <link rel="stylesheet" href="../styles/scaryHouseStyles.css">
 </head>
 <body>
-  <h1>Scary</h1>
+  <div class="scaryHouseWrapper">
+    <div id="welcomeWrapper">
+      <h1>
+        You come across a Scary Looking House.  Do you go inside?
+      </h1>
+      <button onclick="scared()">NO WAY!</button>
+      <button onclick="notScared()">YES!!</button>
+    </div>
+
+    <div id="scaredWrapper">
+      <h1>I guess we won't play a game</h1>
+      <a href="../index.html">
+        <button>Try another Adventure?</button>
+      </a>
+    </div>
+
+    <div id="doorLockedWrapper">
+        <h1>You walk up to the door and the handle doesn't turn.</h1>
+        <div class="buttonWrapper">
+          <button onclick="doorKickedDown()">Kick Door Down</button>
+          <button onclick="scared()">Run away!</button>
+        </div>
+    </div>
+
+    <div id="doorKickedDownWrapper">
+      <h1>A big giant ogre attacks and kills you</h1>
+      <div class="buttonWrapper">
+          <a href="../index.html">
+            <button>Try another Adventure?</button>
+          </a>
+      </div>
+    </div>
+  </div>
 </body>
+<script src="../scripts/scaryHouseScripts.js"></script>
 </html>
